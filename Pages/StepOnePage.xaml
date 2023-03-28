@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GymApp.Pages.StepOnePage"  BackgroundColor="#7abdff">
+    
+    <VerticalStackLayout>
+        <Label 
+            Text="Step 1/5"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" FontSize="Large" Margin="0,90,0,0" TextColor="{StaticResource Key=textColor1}"/>
+        <Label 
+            Text="What is your purpose?"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" FontSize="Small" Margin="0,50,0,50" TextColor="{StaticResource Key=textColor1}"/>
+        <Border Stroke="gray" StrokeThickness="2" StrokeShape="RoundRectangle 20" WidthRequest="170" HeightRequest="50" HorizontalOptions="Center">
+            <Button  x:Name="weightloss"
+                ImageSource="icon1.png"
+                     Text="Weight loss"
+                Clicked="weightloss_Clicked"
+                HorizontalOptions="Center" TextColor="{StaticResource Key=textColor}" WidthRequest="170" HeightRequest="50">
+            </Button>
+        </Border>
+        <VerticalStackLayout Margin="0,25,0,0">
+            <Border Stroke="gray" StrokeThickness="2" StrokeShape="RoundRectangle 20" WidthRequest="170" HeightRequest="50" HorizontalOptions="Center">
+                <Button  x:Name="Keepingfit"
+                ImageSource="icon2.png"
+                     Text="Keeping fit"
+                Clicked="weightloss_Clicked"
+                HorizontalOptions="Center" TextColor="{StaticResource Key=textColor}" WidthRequest="170" HeightRequest="50">
+            </Button>
+        </Border>
+        </VerticalStackLayout>
+        <VerticalStackLayout Margin="0,25,0,0">
+            <Border Stroke="gray" StrokeThickness="2" StrokeShape="RoundRectangle 20" WidthRequest="170" HeightRequest="50" HorizontalOptions="Center">
+            <Button  x:Name="Buildmuscle"
+                ImageSource="icon3.png"
+                     Text="Build muscle"
+                Clicked="weightloss_Clicked"
+                HorizontalOptions="Center" TextColor="{StaticResource Key=textColor}" WidthRequest="170" HeightRequest="50">
+            </Button>
+        </Border>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
